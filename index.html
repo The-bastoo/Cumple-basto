@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación de Cumpleaños</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(#fdfbfb, #ebedee);
+    }
+    #contenido {
+      display: none;
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin-top: 50px;
+    }
+    input[type="password"], button {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Invitación Privada 🎉</h1>
+  <p>Ingresa la contraseña para ver los detalles:</p>
+  <input type="password" id="password" placeholder="Contraseña">
+  <button onclick="verificarPassword()">Ingresar</button>
+
+  <div id="contenido">
+    <h2>Haz sido invitado al cumpleaños de bastiancito 🎂</h2>
+    <p>Va a ser un asado 🥩🍻 (la cuota es de $6.000 por persona para comida, bebida y todo)</p>
+    <p>Confirma tu asistencia y si traes invitad@s también. La idea es que sea piola y que todos la pasen bien 😊</p>
+
+    <!-- Formulario primero -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclGF2KT5Dpb1yiPF67QdUO-3AoVsL0YwPMiyezaB1L8foD2g/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+    <!-- Información del evento -->
+    <p><strong>📍 Dirección:</strong> Casa basto</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d422.7469488216929!2d-70.55836245583477!3d-33.53007158282408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1748799280657!5m2!1ses!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p><strong>📅 Fecha:</strong> 28 de junio de 2025</p>
+    <p><strong>🕒 Hora:</strong> 14:30 hrs</p>
+  </div>
+</body>
+</html>
