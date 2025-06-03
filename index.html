@@ -2,61 +2,101 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Invitación de Cumpleaños</title>
+  <title>Cumpleaños 24K de Bastián</title>
   <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Quicksand', sans-serif;
       text-align: center;
       margin: 0;
       padding: 0;
-      background: linear-gradient(#fdfbfb, #ebedee);
+      background: linear-gradient(to bottom, #800000, #111111);
+      color: #fdf5e6; /* crema */
     }
-    #contenido {
-      display: none;
-      max-width: 700px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+
     h1 {
       margin-top: 50px;
+      font-size: 2.5em;
+      color: gold;
     }
+
     input[type="password"], button {
       padding: 10px;
       font-size: 16px;
       margin-top: 10px;
+      border: none;
+      border-radius: 5px;
     }
+
+    input[type="password"] {
+      width: 200px;
+    }
+
+    button {
+      background-color: gold;
+      color: black;
+      cursor: pointer;
+    }
+
+    #contenido {
+      display: none;
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fdf5e6; /* crema */
+      color: #111;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
     iframe {
       width: 100%;
       max-width: 100%;
-      border: none;
       margin-top: 20px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
+
+  <!-- Música de fondo estilo funk -->
+  <audio autoplay loop hidden>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/KieLoKaz/Free_Songs_2020/08_KieLoKaz_-_Boogie_Down.mp3" type="audio/mpeg">
+  </audio>
+
   <h1>🎉 Invitación Privada 🎉</h1>
   <p>Ingresa la contraseña para ver los detalles:</p>
   <input type="password" id="password" placeholder="Contraseña">
   <button onclick="verificarPassword()">Ingresar</button>
 
   <div id="contenido">
-    <h2>Haz sido invitado al cumpleaños de bastiancito 🎂</h2>
-    <p>Va a ser un asado 🥩🍻 (El cumpleañero pondra la carne y los invitados los bebestibles)</p>
+    <img src="https://i.imgur.com/4kYxQ38.png" alt="Bruno Mars vibes" style="width: 100px; margin-bottom: 20px;">
+
+    <h2>🎉 ¡Bienvenid@ a la fiesta más 24K del año! 🎉</h2>
+    <p>Va a ser un asado 🥩🍻 (El cumpleañero pone la carne y los invitados los bebestibles).</p>
     <p>Confirma tu asistencia y si traes invitad@s también. La idea es que sea piola y que todos la pasen bien 😊</p>
+    <p style="margin-top: 20px; font-weight: bold; color: goldenrod;">
+      ✨ Cumplo 24, así que prepárate para una noche con flow, sabor y estilo a lo Bruno Mars. ¡24K Magic en el aire! ✨
+    </p>
 
-    <!-- Formulario primero -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclGF2KT5Dpb1yiPF67QdUO-3AoVsL0YwPMiyezaB1L8foD2g/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    <!-- Formulario de confirmación -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclGF2KT5Dpb1yiPF67QdUO-3AoVsL0YwPMiyezaB1L8foD2g/viewform?embedded=true" width="640" height="800">Cargando…</iframe>
 
-    <!-- Información del evento -->
+    <!-- Mapa -->
     <p><strong>📍 Dirección:</strong> Casa basto</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d422.7469488216929!2d-70.55836245583477!3d-33.53007158282408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1748799280657!5m2!1ses!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d422.7469488216929!2d-70.55836245583477!3d-33.53007158282408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1748799280657!5m2!1ses!2scl" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <p><strong>📅 Fecha:</strong> 28 de junio de 2025</p>
     <p><strong>🕒 Hora:</strong> 14:30 hrs</p>
   </div>
+
 </body>
 </html>
